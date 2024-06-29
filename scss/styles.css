@@ -1,0 +1,868 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* BOTONERA */
+.botonav {
+  color: black;
+  border-color: black;
+  background-image: linear-gradient(to left, red, yellow);
+}
+
+.h1botonera {
+  color: black;
+  background-image: linear-gradient(to left, rgb(254, 107, 107), rgb(236, 236, 103));
+  border-radius: 10px;
+  border-color: black;
+  padding: 5px;
+  border-style: solid;
+  margin-right: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.margenes {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.colornav {
+  background-image: linear-gradient(to left, red, yellow);
+}
+
+.fondo {
+  background-image: linear-gradient(to left, rgb(254, 107, 107), rgb(236, 236, 103));
+  padding: 10px;
+}
+
+.paddinginicio {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-right: 3px;
+}
+
+.nav-link {
+  color: black;
+}
+
+.bordesBotonera {
+  border-radius: 15px;
+  border-style: outset;
+  border-color: black;
+}
+
+/* INICIO */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 250px);
+  row-gap: 10px;
+  grid-template-areas: "uno uno uno uno" "divp divp divp divp" "dos dos dos dos" "dos dos dos dos" "dos dos dos dos" "tres tres tres tres" "cuatro cuatro cuatro cuatro";
+  /* column-gap: espacio entre columnas */
+  /* row-gap: espacio entre filas */
+}
+
+.divUno {
+  background-color: rgb(175, 255, 232);
+  grid-area: uno;
+  margin-top: 10px;
+}
+
+.divp {
+  background-color: rgb(243, 243, 135);
+  grid-area: divp;
+  color: black;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.divDos {
+  background-color: pink;
+  grid-area: dos;
+}
+
+.divTres {
+  background-color: rgb(175, 255, 232);
+  grid-area: tres;
+}
+
+.divCuatro {
+  background-color: rgb(243, 243, 135);
+  grid-area: cuatro;
+  color: black;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.h2inicio {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 100px;
+  padding-top: 55px;
+  color: rgb(215, 9, 9);
+}
+
+.h3inicio {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 100px;
+  padding-top: 55px;
+  color: rgb(215, 9, 9);
+}
+
+.fondoinicio {
+  background-size: contain;
+  background-image: url(../assets/fondoinicio.jpg);
+}
+
+footer img {
+  max-width: 40px;
+  margin-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer {
+  background-image: linear-gradient(to left, yellow, yellowgreen);
+}
+
+/* SECCIÓN PERSONAJES*/
+.fondoPesonajes {
+  background-size: contain;
+  background-image: url(../assets/fondopersonajes.jpg);
+}
+
+.containerPersonajes {
+  display: grid;
+  margin: 0px 7%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  row-gap: 10px;
+  grid-template-areas: "unop unop unop unop" "dosp dosp dosp dosp" "tresp tresp tresp tresp" "tresp tresp tresp tresp" "tresp tresp tresp tresp" "cuatrop cuatrop cuatrop cuatrop" "cincop cincop cincop cincop" "seisp seisp seisp seisp" "seisp seisp seisp seisp" "seisp seisp seisp seisp" "sietep sietep sietep sietep" "sietep sietep sietep sietep";
+  /* column-gap: espacio entre columnas */
+  /* row-gap: espacio entre filas */
+}
+
+.divUnoPersonajes {
+  grid-area: unop;
+  margin-top: 10px;
+  background-color: rgb(175, 255, 232);
+  color: rgb(215, 9, 9);
+}
+
+.divDosPersonajes {
+  background-color: rgb(183, 243, 127);
+  grid-area: dosp;
+  color: black;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 65px;
+}
+
+.divTresPersonajes {
+  background-color: blue;
+  grid-area: tresp;
+}
+
+.divCuatroPersonajes {
+  background-color: rgb(175, 255, 232);
+  grid-area: cuatrop;
+}
+
+.divCincoPersonajes {
+  background-color: pink;
+  grid-area: cincop;
+  color: black;
+  font-size: 25px;
+  padding: 20px;
+  padding-top: 70px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.divSeisPersonajes {
+  background-color: brown;
+  grid-area: seisp;
+}
+
+.divSietePersonajes {
+  background-color: rgb(175, 255, 232);
+  grid-area: sietep;
+}
+
+.h2personajes {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 100px;
+  padding-top: 55px;
+}
+
+.h3personajes {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 60px;
+  padding: 50px;
+  padding-top: 80px;
+  color: rgb(215, 9, 9);
+}
+
+div h4 {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 60px;
+  color: black;
+}
+
+.tiposdeRareza {
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.containerPersonajes2 {
+  display: grid;
+  margin: 0px 7%;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6";
+}
+
+.foto1 {
+  background-color: red;
+  grid-area: foto1;
+}
+
+.foto2 {
+  background-color: blue;
+  grid-area: foto2;
+}
+
+.foto3 {
+  background-color: green;
+  grid-area: foto3;
+}
+
+.foto4 {
+  background-color: orange;
+  grid-area: foto4;
+}
+
+.foto5 {
+  background-color: yellow;
+  grid-area: foto5;
+}
+
+.foto6 {
+  background-color: aquamarine;
+  grid-area: foto6;
+}
+
+/* MODOS DE JUEGO */
+.fondoModJueg {
+  background-image: url(../assets/fondomodjueg.png);
+  background-size: contain;
+}
+
+.containerModJueg {
+  display: grid;
+  margin: 0px 7%;
+  padding-bottom: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(20, 300px);
+  grid-template-areas: "area1 area1 area1 area1 area1 area1" "area2 area2 area2 area2 area2 area2" "area3 area3 area3 area4 area4 area4" "area3 area3 area3 area4 area4 area4" "area5 area6 area7 area8 area9 area10" "area11 area11 area11 area12 area12 area12" "area11 area11 area11 area12 area12 area12" "area13 area14 area15 area16 area17 area18" "area19 area19 area19 area20 area20 area20" "area19 area19 area19 area20 area20 area20" "area21 area22 area23 area24 area25 area26" "area27 area27 area27 area28 area28 area28" "area27 area27 area27 area28 area28 area28" "area29 area30 area31 area32 area33 area34" "area35 area35 area35 area36 area36 area36" "area35 area35 area35 area36 area36 area36" "area37 area38 area39 area40 area41 area42" "area43 area43 area43 area44 area44 area44" "area43 area43 area43 area44 area44 area44" "area45 area46 area47 area48 area49 area50";
+}
+
+.div1MD {
+  background-color: rgb(175, 255, 232);
+  grid-area: area1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.div2MD {
+  background-color: pink;
+  grid-area: area2;
+  color: black;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 65px;
+  margin-bottom: 15px;
+}
+
+.div3MD {
+  background-color: green;
+  grid-area: area3;
+}
+
+.div4MD {
+  background-color: black;
+  grid-area: area4;
+}
+
+.div5MD {
+  background-color: green;
+  grid-area: area5;
+}
+
+.div6MD {
+  background-color: green;
+  grid-area: area6;
+}
+
+.div7MD {
+  background-color: green;
+  grid-area: area7;
+}
+
+.div8MD {
+  background-color: green;
+  grid-area: area8;
+}
+
+.div9MD {
+  background-color: green;
+  grid-area: area9;
+}
+
+.div10MD {
+  background-color: green;
+  grid-area: area10;
+}
+
+/* Inicia Atraco */
+.div11MD {
+  background-color: green;
+  grid-area: area11;
+  margin-top: 20px;
+}
+
+.div12MD {
+  background-color: black;
+  grid-area: area12;
+  margin-top: 20px;
+}
+
+.div13MD {
+  background-color: green;
+  grid-area: area13;
+}
+
+.div14MD {
+  background-color: green;
+  grid-area: area14;
+}
+
+.div15MD {
+  background-color: green;
+  grid-area: area15;
+}
+
+.div16MD {
+  background-color: green;
+  grid-area: area16;
+}
+
+.div17MD {
+  background-color: green;
+  grid-area: area17;
+}
+
+.div18MD {
+  background-color: green;
+  grid-area: area18;
+}
+
+/* Inicia BalonBrawl */
+.div19MD {
+  background-color: green;
+  grid-area: area19;
+  margin-top: 20px;
+}
+
+.div20MD {
+  background-color: black;
+  grid-area: area20;
+  margin-top: 20px;
+}
+
+.div21MD {
+  background-color: green;
+  grid-area: area21;
+}
+
+.div22MD {
+  background-color: green;
+  grid-area: area22;
+}
+
+.div23MD {
+  background-color: green;
+  grid-area: area23;
+}
+
+.div24MD {
+  background-color: green;
+  grid-area: area24;
+}
+
+.div25MD {
+  background-color: green;
+  grid-area: area25;
+}
+
+.div26MD {
+  background-color: green;
+  grid-area: area26;
+}
+
+/* Inicia Supervivencia */
+.div27MD {
+  background-color: green;
+  grid-area: area27;
+  margin-top: 20px;
+}
+
+.div28MD {
+  background-color: black;
+  grid-area: area28;
+  margin-top: 20px;
+}
+
+.div29MD {
+  background-color: green;
+  grid-area: area29;
+}
+
+.div30MD {
+  background-color: green;
+  grid-area: area30;
+}
+
+.div31MD {
+  background-color: green;
+  grid-area: area31;
+}
+
+.div32MD {
+  background-color: green;
+  grid-area: area32;
+}
+
+.div33MD {
+  background-color: green;
+  grid-area: area33;
+}
+
+.div34MD {
+  background-color: green;
+  grid-area: area34;
+}
+
+/* Inicia ZonaRestringida */
+.div35MD {
+  background-color: green;
+  grid-area: area35;
+  margin-top: 20px;
+}
+
+.div36MD {
+  background-color: black;
+  grid-area: area36;
+  margin-top: 20px;
+}
+
+.div37MD {
+  background-color: green;
+  grid-area: area37;
+}
+
+.div38MD {
+  background-color: green;
+  grid-area: area38;
+}
+
+.div39MD {
+  background-color: green;
+  grid-area: area39;
+}
+
+.div40MD {
+  background-color: green;
+  grid-area: area40;
+}
+
+.div41MD {
+  background-color: green;
+  grid-area: area41;
+}
+
+.div42MD {
+  background-color: green;
+  grid-area: area42;
+}
+
+/* Inicia Noqueo */
+.div43MD {
+  background-color: green;
+  grid-area: area43;
+  margin-top: 20px;
+}
+
+.div44MD {
+  background-color: black;
+  grid-area: area44;
+  margin-top: 20px;
+}
+
+.div45MD {
+  background-color: green;
+  grid-area: area45;
+}
+
+.div46MD {
+  background-color: green;
+  grid-area: area46;
+}
+
+.div47MD {
+  background-color: green;
+  grid-area: area47;
+}
+
+.div48MD {
+  background-color: green;
+  grid-area: area48;
+}
+
+.div49MD {
+  background-color: green;
+  grid-area: area49;
+}
+
+.div50MD {
+  background-color: green;
+  grid-area: area50;
+}
+
+.h2md {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  font-size: 90px;
+  padding: 100px;
+  color: rgb(215, 9, 9);
+}
+
+.textp {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  padding-top: 100px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.h4modjue {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+
+/* NOVEDADES */
+.fondoNovedades {
+  background-image: url(../assets/fondonovedades.jpg);
+}
+
+.containerNovedades {
+  display: grid;
+  margin: 0px 7%;
+  row-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 250px 400px 430px 250px 380px;
+  grid-template-areas: "areaN1 areaN1 areaN1 areaN1" "areaN2 areaN2 areaN2 areaN2" "areaN3 areaN3 areaN3 areaN3" "areaN4 areaN4 areaN4 areaN4" "areaN4 areaN4 areaN4 areaN4" "areaN5 areaN5 areaN5 areaN5";
+}
+
+.div1Nov {
+  background-color: rgb(175, 255, 232);
+  grid-area: areaN1;
+  margin-top: 10px;
+}
+
+.div2Nov {
+  background-image: linear-gradient(to left, yellow, orange);
+  grid-area: areaN2;
+}
+
+.div3Nov {
+  background-image: linear-gradient(to left, beige, tomato);
+  grid-area: areaN3;
+}
+
+.div4Nov {
+  background-image: linear-gradient(to left, beige, tomato);
+  grid-area: areaN4;
+}
+
+.div5Nov {
+  background-image: linear-gradient(to left, beige, tomato);
+  grid-area: areaN5;
+}
+
+.h2Nov {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  font-size: 100px;
+  padding: 55px;
+  color: rgb(215, 9, 9);
+}
+
+.h3Nov {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  font-size: 50px;
+  padding: 55px;
+  color: black;
+}
+
+h3 span {
+  padding: 10px;
+}
+
+.h4Nov {
+  font-size: 60px;
+  color: black;
+}
+
+.ul1Nov {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.h5Nov {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0px 0px 8px;
+  padding: 40px 0px 20px;
+  font-size: 60px;
+  color: black;
+}
+
+.ul2Nov {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.h6Nov {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0px 0px 8px;
+  padding: 40px 0px 20px;
+  font-size: 60px;
+  color: black;
+}
+
+.ul3Nov {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.espaciodiv5Nov {
+  margin-bottom: 10px;
+}
+
+/* CONSULTAS */
+/* Personalización del formulario */
+#consultas {
+  height: 80vh;
+  background-image: linear-gradient(to bottom, rgb(50, 143, 225), #abd6dd, gray); /* Color de fondo de la sección */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.form-select {
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: yellowgreen; /* Color del botón */
+  color: black;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: yellow; /* Color del botón al pasar el cursor */
+  color: black;
+}
+
+.h2Consultas {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 34px;
+}
+
+@media (min-width: 400px) and (max-width: 999px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 200px);
+    grid-template-areas: "uno uno uno" "divp divp divp" "dos dos dos" "dos dos dos" "tres tres tres" "cuatro cuatro cuatro" "cuatro cuatro cuatro";
+  }
+  .h2inicio {
+    font-size: 50px;
+  }
+  .pinicio {
+    font-size: 16px;
+  }
+  .divDos {
+    font-size: 100%;
+  }
+  .h3inicio {
+    font-size: 50px;
+  }
+  .divCuatro {
+    font-size: 16px;
+    padding-top: 70px;
+  }
+  .containerPersonajes {
+    display: grid;
+    box-sizing: border-box;
+    padding: 0px 12px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(14, 150px);
+    row-gap: 10px;
+    grid-template-areas: "unop unop unop" "dosp dosp dosp" "tresp tresp tresp" "tresp tresp tresp" "cuatrop cuatrop cuatrop" "cincop cincop cincop" "cincop cincop cincop" "seisp seisp seisp" "seisp seisp seisp" "sietep sietep sietep" "sietep sietep sietep" "sietep sietep sietep" "sietep sietep sietep" "sietep sietep sietep";
+    /* column-gap: espacio entre columnas */
+    /* row-gap: espacio entre filas */
+  }
+  .h2personajes {
+    font-size: 29px;
+    padding-top: 55px;
+  }
+  .divDosPersonajes {
+    padding: 20px;
+  }
+  .pPersonajes {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .h3personajes {
+    font-size: 30px;
+    padding-top: 35px;
+  }
+  .textPersonajes {
+    font-size: 20px;
+  }
+  .h4Personajes {
+    font-size: 30px;
+    padding: 10px;
+    padding-top: 35px;
+  }
+  .tiposdeRareza {
+    font-size: 21px;
+  }
+  .divCincoPersonajes {
+    padding: 20px;
+  }
+  .containerModJueg {
+    display: grid;
+    box-sizing: border-box;
+    margin: 0px 7%;
+    padding-bottom: 10px;
+    /* row-gap: 20px; */
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(20, 300px);
+    grid-template-areas: "area1 area1 area1 area1 area1 area1" "area2 area2 area2 area2 area2 area2" "area3 area3 area3 area3 area3 area3" "area4 area4 area4 area4 area4 area4" "area5 area6 area7 area8 area9 area10" "area11 area11 area11 area11 area11 area11" "area12 area12 area12 area12 area12 area12" "area13 area14 area15 area16 area17 area18" "area19 area19 area19 area19 area19 area19" "area20 area20 area20 area20 area20 area20" "area21 area22 area23 area24 area25 area26" "area27 area27 area27 area27 area27 area27" "area28 area28 area28 area28 area28 area28" "area29 area30 area31 area32 area33 area34" "area35 area35 area35 area35 area35 area35" "area36 area36 area36 area36 area36 area36" "area37 area38 area39 area40 area41 area42" "area43 area43 area43 area43 area43 area43" "area44 area44 area44 area44 area44 area44" "area45 area46 area47 area48 area49 area50";
+  }
+  .h2md {
+    font-size: 45px;
+    padding: 10px;
+    padding-top: 75px;
+  }
+  .div2MD {
+    font-size: 20px;
+    padding: 30px;
+    padding-top: 50px;
+  }
+  .h4modjue {
+    font-size: 20px;
+  }
+  .textp {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .div12MD {
+    margin: 0;
+  }
+  .div20MD {
+    margin: 0;
+  }
+  .div28MD {
+    margin: 0;
+  }
+  .div36MD {
+    margin: 0;
+  }
+  .div44MD {
+    margin: 0;
+  }
+  .containerNovedades {
+    display: grid;
+    margin: 0px 7%;
+    row-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 250px 400px 400px 430px 430px 250px 380px 380px;
+    grid-template-areas: "areaN1 areaN1 areaN1 areaN1" "areaN2 areaN2 areaN2 areaN2" "areaN3 areaN3 areaN3 areaN3" "areaN3 areaN3 areaN3 areaN3" "areaN4 areaN4 areaN4 areaN4" "areaN4 areaN4 areaN4 areaN4" "areaN4 areaN4 areaN4 areaN4" "areaN5 areaN5 areaN5 areaN5" "areaN5 areaN5 areaN5 areaN5";
+  }
+  .h2Nov {
+    font-size: 40px;
+  }
+  .h3Nov {
+    font-size: 30px;
+  }
+  .h4Nov {
+    font-size: 20px;
+  }
+  .h5Nov {
+    font-size: 60px;
+  }
+  .h6Nov {
+    font-size: 60px;
+  }
+  .ul1Nov {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  .ul2Nov {
+    font-size: 20px;
+  }
+  .ul3Nov {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */
